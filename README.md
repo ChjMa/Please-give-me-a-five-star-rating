@@ -1,5 +1,3 @@
-# recipes-and-ratings-analysis
-
 ## Introduction
 
 ## Data Cleaning and Exploratory Data Analysis
