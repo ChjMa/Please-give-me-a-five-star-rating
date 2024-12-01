@@ -18,11 +18,11 @@ Part 2: make a prediction model for the ratings.
 ## Data Cleaning and Exploratory Data Analysis
 ### Data Cleaning ###  
 
-**Step 1**  
+**Step 1: split nutrition**  
 
 The detailed amounts of nutrition components have been saved as strings in the feature "nutrition", so the first step of data cleaning will be splitting this feature into several quantitative features.  
 
-**Step 2**  
+**Step 2: fill NaN values**  
 
 There are a lot of examples showing 0 in ratings since not everyone wants to rate their order, so the second step of data cleaning will be changing the 0 ratings to NaN and filling them with the mean value after grouping by the interval of minutes.  
 
