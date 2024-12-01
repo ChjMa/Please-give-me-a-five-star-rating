@@ -18,7 +18,7 @@ Part 2: make a prediction model for the ratings.
 ## Data Cleaning and Exploratory Data Analysis
 ### Data Cleaning ###  
 
-**Step 1: split nutrition**  
+**Step 1: split categorical features**  
 
 The detailed amounts of nutrition components have been saved as strings in the feature "nutrition", so the first step of data cleaning will be splitting this feature into several quantitative features.  
 
