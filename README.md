@@ -1,5 +1,6 @@
 ## Introduction
 This project aims to analyze the data set of "Recipies and Ratings".
+
 This dataset has 17 features and 234429 examples. The relevant features have been listed below:
 
 | Number | Feature | Description |
@@ -11,7 +12,8 @@ This dataset has 17 features and 234429 examples. The relevant features have bee
 | 5 | rating | The number of rating of the orders |
 
 This project will be divided into two parts:
-Part 1: analyze the relation between the minutes used in making the meals and the ratings
+
+Part 1: analyze the relation between the minutes used in making the meals and the ratings.  
 Part 2: make a prediction model for the ratings.
 
 ## Data Cleaning and Exploratory Data Analysis
