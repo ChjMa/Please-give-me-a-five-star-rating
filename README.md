@@ -1,6 +1,5 @@
 ## Introduction
-This project aims to analyze the data set of "Recipies and Ratings".
-
+This project aims to analyze the data set of "Recipies and Ratings".  
 This dataset has 17 features and 234429 examples. The relevant features have been listed below:
 
 | Number | Feature | Description |
