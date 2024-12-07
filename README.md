@@ -36,10 +36,28 @@ There are a lot of examples showing 0 in ratings since not everyone wants to rat
 
 ### Univariate Analysis ###  
 
-First  
+First, let's see the distribution of different ratings as below:
 
+<iframe src="assets/uni-1.html" width="800" height="600" frameborder="0"></iframe>  
 
-<iframe src="assets/uni-1.html" width="800" height="600" frameborder="0"></iframe>
+Above is an analysis based on the star rating distribution for the restaurant:  
+
+5-Star Ratings: This is the most frequent rating, with over 150,000 counts, indicating that the majority of customers had an excellent experience.  
+4-Star Ratings: The second most common rating, with approximately 40,000 counts, reflects a significant portion of satisfied customers.  
+3-Star Ratings: A small number of 3-star ratings suggest relatively fewer neutral reviews.
+0-Star Ratings: This category, which includes ratings of zero, has a moderate count of about 20,000. It could represent missing or invalid ratings.  
+1-Star and 2-Star Ratings: Both categories have very low counts, indicating that very few customers rated their experience poorly.  
+
+Next, let's see the distribution of different minute intervals as below:  
+
+<iframe src="assets/uni-2.html" width="800" height="600" frameborder="0"></iframe>  
+
+Above is a summary based on the bar chart depicting the frequency of restaurant order preparation times categorized into specific time intervals:  
+
+(20, 40) Minutes: This interval has the highest count, with approximately 70,000 orders, indicating that most orders are prepared within this range.  
+(0, 20) Minutes and (40, 60) Minutes: These intervals also exhibit high counts, both around 50,000 orders. Together, they represent a significant portion of the total orders.  
+[60, 80) Minutes: About 25,000 orders fall into this range, showing a moderate frequency.  
+[100, ∞) and [80, 100): These intervals account for the smallest counts, with approximately 20,000 and 10,000 orders, respectively.  
 
 ### Bivariate Analysis ###  
 
@@ -49,7 +67,7 @@ First
 ### Imputation ###  
 This part is an additional explanation of the missing rating imputation.  
 
-The technique used here imputes the missing values by grouping the examples based on the minute interval since the goal of this data analysis is to figure out the relation between the cooking minutes and the ratings.  
+The technique used here imputes the missing values by grouping the examples based on the minute interval since this data analysis aims to figure out the relation between the cooking minutes and the ratings.  
 
 The mean values of minutes of different intervals have been listed below:  
 | Interval | Mean of Minutes |
