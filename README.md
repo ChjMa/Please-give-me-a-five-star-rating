@@ -43,13 +43,17 @@ There are a lot of examples showing 0 in ratings since not everyone wants to rat
 
 ### Univariate Analysis ###  
 
-First, let's see the amount distribution of different minutes interval as below:
+First, let's see the amount distribution of different minute intervals as below:
 
 <iframe src="assest/uni-1.html" width="800" height="600" frameborder="0"></iframe>  
 
+<iframe src="assest/uni-2.html" width="800" height="600" frameborder="0"></iframe>
+
 ### Bivariate Analysis ###  
 
-<iframe src="assest/bi-1.html" width="800" height="600" frameborder="0"></iframe>
+<iframe src="assest/bi-1.html" width="800" height="600" frameborder="0"></iframe>  
+
+<iframe src="assest/bi-2.html" width="800" height="600" frameborder="0"></iframe>
 
 ### Aggregation Analysis ###  
 
