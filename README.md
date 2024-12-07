@@ -40,11 +40,9 @@ First, let's see the distribution of different ratings as below:
 
 <iframe src="assest/uni-1.html" width="800" height="600" frameborder="0"></iframe>  
 
-
 Next, let's see the distribution of different minute intervals as below:  
 
 <iframe src="assest/uni-2.html" width="800" height="600" frameborder="0"></iframe>  
-  
 
 ### Bivariate Analysis ###  
 
@@ -66,9 +64,7 @@ After the imputation, the distribution of ratings is shown below:
 
 
 ## Framing a Prediction Problem ##  
-The rest of the parts of this project will focus on setting up a regression prediction model for the ratings based on some features in the dataset.  
-
-There will be two models set up to predict the ratings. The first simpler one uses only 2 features, and the second one uses more features and polynomial regression.  
+The rest of the parts of this project will focus on setting up a classification prediction model for the ratings based on some features in the dataset.    
 
 ## Baseline Model ##  
 This part aims to set up a prediction model based on 2 features. Here is how the model is set up:  
