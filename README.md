@@ -15,6 +15,13 @@ This project will be divided into two parts:
 Part 1: analyze the relation between the minutes used in making the meals and the ratings.  
 Part 2: make a prediction model for the ratings.
 
+
+
+
+
+
+
+
 ## Data Cleaning and Exploratory Data Analysis ##  
 ### Data Cleaning ###  
 
@@ -63,7 +70,7 @@ After the imputation, the distribution of ratings is shown below:
 
 
 ## Framing a Prediction Problem ##  
-The rest of the parts of this project will focus on setting up a classification prediction model for the ratings based on some features in the dataset.    
+The rest of the parts of this project will focus on setting up a multiclass classification prediction model for the ratings based on some features in the dataset.    
 
 ## Baseline Model ##  
 This part aims to set up a prediction model based on 2 features. Here is how the model is set up:  
