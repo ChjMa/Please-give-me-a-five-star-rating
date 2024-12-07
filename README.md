@@ -39,7 +39,7 @@ There are a lot of examples showing 0 in ratings since not everyone wants to rat
 First  
 
 
-<iframe src="uni-1.html" width="800" height="600" frameborder="0"></iframe>
+<iframe src="assets/uni-1.html" width="800" height="600" frameborder="0"></iframe>
 
 ### Bivariate Analysis ###  
 
