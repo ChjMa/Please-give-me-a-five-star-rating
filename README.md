@@ -62,15 +62,36 @@ Next, let's see the distribution of different minute intervals as below:
 | (0, 20)            |   52165 | 4.48011 |
 | [20, 40)           |   71600 | 4.40978 |
 | [40, 60)           |   43866 | 4.37327 |
-| [60, ∞)            |   56949 | 4.28943 |
+| [60, ∞)            |   56949 | 4.28943 |  
+
+### Imputation ###  
  
 Before the imputation, the distribution of ratings is shown below:  
 
+<iframe src="assest/uni-3.html" width="800" height="600" frameborder="0"></iframe>
+
 After the imputation, the distribution of ratings is shown below:  
+
+<iframe src="assest/uni-4.html" width="800" height="600" frameborder="0"></iframe>
+
+
+
+
+
+
+
 
 
 ## Framing a Prediction Problem ##  
 The rest of the parts of this project will focus on setting up a multiclass classification prediction model for the ratings based on some features in the dataset.    
+
+
+
+
+
+
+
+
 
 ## Baseline Model ##  
 This part aims to set up a prediction model based on 2 features. Here is how the model is set up:  
@@ -84,6 +105,12 @@ The features chosen here to set up a basic model are "minutes" and "n_steps" whi
 **Step 2: Split Training and Testing Data**  
 
 Set 80% of examples as training data, and 20% of examples as testing data.
+
+
+
+
+
+
 
 
 
