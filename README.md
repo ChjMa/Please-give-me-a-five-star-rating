@@ -48,6 +48,8 @@ Next, let's see the distribution of different minute intervals as below:
 
 ### Bivariate Analysis ###  
 
+<iframe src="assest/bi-1.html" width="800" height="600" frameborder="0"></iframe>
+
 ### Aggregation Analysis ###  
 
 |   count |    mean |
@@ -81,23 +83,7 @@ The features chosen here to set up a basic model are "minutes" and "n_steps" whi
 
 Set 80% of examples as training data, and 20% of examples as testing data.
 
-**Step 3: Make pipeline**  
 
-To make the model more accurate, a StandardScaler() is added as the first step of the pipeline.  
-
-After that, the pipeline fits the data using LinearRegression().  
-
-**Step 4: Performance Evaluation**  
-
-The performance of the model is evaluated by the mean square error.  
-
-The training and testing mean square error is listed below:
-
-| Training | Testing |
-| -------- | ------- |
-| 0.47 | 0.45 |  
-
-We can see that the mean square error on the training and testing data has been an acceptable value. However, the model can still be optimized by adding more features and using non-linear regression.
 
 ## Final Model ##  
 
@@ -120,17 +106,7 @@ Set 80% of examples as training data, and 20% of examples as testing data, and t
 
 **Step 3: Set up model**
 
-The usage of the polynomial regression requires setting a scope of the degree as hyperparams. To shorten the training time, the scope of the degree is set from 1 to 12.  
 
-Then, we use a pipeline to include the StandardScaler(), the PolynomialFeatures(), and the LinearRegression().  
-
-Next, we include this pipeline in a GridSearchCV model. The parameters are set as below:  
-
-| Parameter | Value |
-| --------- | ----- |
-| param_grid | polynomialfeatures__degree: range(1, 12) |
-| cv | 5 |
-| scoring | neg_mean_squared_error |  
 
 **Step 4: Fit Data and Evaluate Performance**
 
