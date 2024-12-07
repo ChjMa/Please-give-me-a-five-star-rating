@@ -155,5 +155,6 @@ The scores of the model on training and testing data are improved as below:
 | Training | 0.7997706830528097 | 
 | Testing | 0.7538293703802654 |
 
+There is a small but also valuable improvement after adding several features.
 
 
