@@ -96,8 +96,6 @@ The rest of the parts of this project will focus on setting up a multiclass clas
 ## Baseline Model ##  
 This part aims to set up a prediction model based on 2 features. Here is how the model is set up:  
 
-**Step 1: Training and Testing Data 
-
 **Step 1: Select features**  
 
 The features chosen here to set up a basic model are "minutes" and "n_steps" which represent the time complexity of making a meal.  
@@ -124,10 +122,12 @@ The steps of setting up this model are shown below:
 
 These features are added to the selected features:  
 1. calories
-2. protein
-3. sodium
-
-The remained features in nutrition can be represented by calories to some extent, so they are not selected.  
+2. total_fat
+3. sugar
+4. sodium
+5. protein
+6. saturated_fat
+7. carbohydrates
 
 **Step 2: Split Training and Testing Data**  
 
