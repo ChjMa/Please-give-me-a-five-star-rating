@@ -65,7 +65,9 @@ First, let's see the amount distribution of different minute intervals as below:
 | [60, ∞)            |   56949 | 4.28943 |  
 
 ### Imputation ###  
- 
+
+Here we choose to fill the NaN ratings with 5.0 since it is the majority, and it can be proven by the fact that most people tend to give a 5.0 rating even though the meal is bad.
+
 Before the imputation, the distribution of ratings is shown below:  
 
 <iframe src="assest/imp-1.html" width="800" height="600" frameborder="0"></iframe>  
@@ -98,11 +100,19 @@ This part aims to set up a prediction model based on 2 features. Here is how the
 
 **Step 1: Select features**  
 
-The features chosen here to set up a basic model are "minutes" and "n_steps" which represent the time complexity of making a meal.  
+The quantitative features chosen here to set up a basic model are "minutes" and "n_steps" which represent the time complexity of making a meal.  
 
 **Step 2: Split Training and Testing Data**  
 
-Set 80% of examples as training data, and 20% of examples as testing data.
+Set 80% of examples as training data, and 20% of examples as testing data.  
+
+**Step 3: Fit Data and Evaluate Performance**  
+The scores of the model on training and testing data are shown as below:  
+
+| Data | Score |
+| ---- | ----- |
+| Training | 0.7546698281236085 | 
+| Testing | 0.7488200195921275 |
 
 
 
@@ -137,7 +147,13 @@ Set 80% of examples as training data, and 20% of examples as testing data, and t
 
 
 
-**Step 4: Fit Data and Evaluate Performance**
+**Step 4: Fit Data and Evaluate Performance**  
+The scores of the model on training and testing data are improved as below:  
+
+| Data | Score |
+| ---- | ----- |
+| Training | 0.7997706830528097 | 
+| Testing | 0.7538293703802654 |
 
 
 
