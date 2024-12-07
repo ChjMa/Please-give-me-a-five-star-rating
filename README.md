@@ -48,7 +48,14 @@ Next, let's see the distribution of different minute intervals as below:
 
 ### Bivariate Analysis ###  
 
-### Aggregation Analysis ###
+### Aggregation Analysis ###  
+
+|   count |    mean |
+|--------:|--------:|
+|   52165 | 4.48011 |
+|   71600 | 4.40978 |
+|   43866 | 4.37327 |
+|   56949 | 4.28943 |
  
 
 Before the imputation, the distribution of ratings is shown below:  
