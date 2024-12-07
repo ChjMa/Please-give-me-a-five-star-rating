@@ -50,14 +50,13 @@ Next, let's see the distribution of different minute intervals as below:
 
 ### Aggregation Analysis ###  
 
-|   count |    mean |
-|--------:|--------:|
-|   52165 | 4.48011 |
-|   71600 | 4.40978 |
-|   43866 | 4.37327 |
-|   56949 | 4.28943 |
+| minutes_interval   |   count |    mean |
+|:-------------------|--------:|--------:|
+| (0, 20)            |   52165 | 4.48011 |
+| [20, 40)           |   71600 | 4.40978 |
+| [40, 60)           |   43866 | 4.37327 |
+| [60, ∞)            |   56949 | 4.28943 |
  
-
 Before the imputation, the distribution of ratings is shown below:  
 
 After the imputation, the distribution of ratings is shown below:  
