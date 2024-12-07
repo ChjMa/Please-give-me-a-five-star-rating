@@ -34,9 +34,9 @@ There are a lot of examples showing 0 in ratings since not everyone wants to rat
 | 306168 |        40 |         6 |      194.8 |          20 |       6 |       32 |        22 |              36 |               3 |        5 | [40, 60)           |
 | 306168 |        40 |         6 |      194.8 |          20 |       6 |       32 |        22 |              36 |               3 |        5 | [40, 60)           |  
 
-## Exploratory Data Analysis ##  
-
 ### Univariate Analysis ###  
+
+Frist
 
 ### Bivariate Analysis ###  
 
