@@ -32,7 +32,7 @@ There are a lot of examples showing 0 in ratings since not everyone wants to rat
 | 453467 |        45 |        12 |      595.1 |          46 |     211 |       22 |        13 |              51 |              26 |        5 | [40, 60)           |
 | 306168 |        40 |         6 |      194.8 |          20 |       6 |       32 |        22 |              36 |               3 |        5 | [40, 60)           |
 | 306168 |        40 |         6 |      194.8 |          20 |       6 |       32 |        22 |              36 |               3 |        5 | [40, 60)           |
-| 306168 |        40 |         6 |      194.8 |          20 |       6 |       32 |        22 |              36 |               3 |        5 | [40, 60)           |  
+| 306168 |        40 |         6 |      194.8 |          20 |       6 |       32 |        22 |              36 |               3 |        5 | [40, 60)   
 
 ### Univariate Analysis ###  
 
@@ -63,21 +63,6 @@ Above is a summary based on the bar chart depicting the frequency of restaurant 
 
 ### Aggregation Analysis ###
  
-
-### Imputation ###  
-This part is an additional explanation of the missing rating imputation.  
-
-The technique used here imputes the missing values by grouping the examples based on the minute interval since this data analysis aims to figure out the relation between the cooking minutes and the ratings.  
-
-The mean values of minutes of different intervals have been listed below:  
-| Interval | Mean of Minutes |
-| ----------- | ----------- |
-| (0, 20) | 4.72 |
-| [20, 40) | 4.68 |
-| [40, 60) | 4.67 |
-| [60, 80) | 4.68 | 
-| [80, 100) | 4.68 |
-| [100, ∞) | 4.66 |  
 
 Before the imputation, the distribution of ratings is shown below:  
 
