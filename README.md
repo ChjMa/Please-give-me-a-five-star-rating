@@ -36,7 +36,8 @@ There are a lot of examples showing 0 in ratings since not everyone wants to rat
 
 ### Univariate Analysis ###  
 
-Frist  
+First  
+
 
 <iframe src="uni-1.html" width="800" height="600" frameborder="0"></iframe>
 
