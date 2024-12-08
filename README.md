@@ -131,8 +131,7 @@ The scores of the model on training and testing data are shown below:
 | Data | Score |
 | ---- | ----- |
 | Training | 0.7546698281236085 | 
-| Testing | 0.7488200195921275 |
-
+| Testing | 0.7488200195921275 |  
 
 
 
@@ -176,6 +175,10 @@ The scores of the model on training and testing data are improved as below:
 | Training | 0.799998886810936 | 
 | Testing | 0.7517143111586072 |
 
-There is a small but also valuable improvement after adding several features.
+There is a small but also valuable improvement after adding several features.  
+
+## Conclusion ##  
+
+This project analyzes the relation between the minutes taken in making a meal and the ratings and also tries to predict the rating based on the minutes and the nutrition. In the future, more complex methods will be used and more features will be added in the model.
 
 
