@@ -161,7 +161,7 @@ These features will make the model predict the ratings not only based on the tim
 
 **Step 2: Split Training and Testing Data**  
 
-Set 80% of examples as training data, and 20% of examples as testing data, and the random state is set as 32. Using different   
+Set 80% of examples as training data, and 20% of examples as testing data, and the random state is set as same as 23. Using different   
 
 **Step 3: Set up model**
 
