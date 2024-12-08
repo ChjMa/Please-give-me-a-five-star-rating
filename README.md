@@ -15,7 +15,7 @@ This dataset has 17 features and 234429 examples. The relevant features have bee
 This project will be divided into two parts:
 
 Part 1: analyze the relation between the minutes used in making the meals and the ratings.  
-Part 2: make a prediction model for the ratings.
+Part 2: make a multiclass classification model for predicting the ratings.
 
 
 
@@ -49,15 +49,27 @@ First, let's see the amount distribution of different minute intervals as below:
 
 <iframe src="assest/uni-1.html" width="800" height="400" frameborder="0"></iframe>   
 
+Also, we can see the distribution of n_steps as below:  
+
 <iframe src="assest/uni-2.html" width="800" height="400" frameborder="0"></iframe>  
 
 ### Bivariate Analysis ###  
 
+Below is the mean of the ratings at every minute interval:  
+
 <iframe src="assest/bi-1.html" width="800" height="400" frameborder="0"></iframe>   
+
+We can see that the mean of ratings does not strictly decrease as the minutes increase, meaning that some customers are willing to give a high rating to the meals that take more time and are more exquisite.  
+
+Next, we can see the mean of the n_steps at every minute intervals:  
 
 <iframe src="assest/bi-2.html" width="800" height="400" frameborder="0"></iframe>  
 
+We can see that the steps increase as the minutes increase, but slower after 20 minutes are taken.
+
 ### Aggregation Analysis ###  
+
+Here is the detailed pivot table of the minutes interval and the ratings.
 
 | minutes_interval   |   count |    mean |
 |:-------------------|--------:|--------:|
@@ -78,6 +90,7 @@ After the imputation, the distribution of ratings is shown below:
 
 <iframe src="assest/imp-2.html" width="800" height="400" frameborder="0"></iframe>  
 
+There is no 0 rating after imputation.  
 
 
 
@@ -87,7 +100,7 @@ After the imputation, the distribution of ratings is shown below:
 
 
 ## Framing a Prediction Problem ##  
-The rest of the parts of this project will focus on setting up a multiclass classification prediction model for the ratings based on some features in the dataset.    
+The rest of the parts of this project will focus on setting up a multiclass classification model for predicting the ratings based on some features in the dataset.    
 
 
 
@@ -102,14 +115,18 @@ This part aims to set up a prediction model based on 2 features. Here is how the
 
 **Step 1: Select features**  
 
-The quantitative features chosen here to set up a basic model are "minutes" and "n_steps" which represent the time complexity of making a meal.  
+The quantitative features chosen here to set up a basic model are "minutes" and "n_steps" which represent the time complexity of making a meal. There are no categorical features selected.  
 
 **Step 2: Split Training and Testing Data**  
 
 Set 80% of examples as training data, and 20% of examples as testing data.  
 
-**Step 3: Fit Data and Evaluate Performance**  
-The scores of the model on training and testing data are shown as below:  
+**Step 3: Set up model**  
+
+Use the K-Neighbors model to classify the ratings, and use GridSearchCV to find out the optimal amount of neighbors in the scope [3, 5]. The reason that the optimal amount of neighbors may not be 5 is that somebody will give a 5.0 rating even though the meal only deserves 3.0 or 2.0, or give a 3.0 to a perfect meal deserving a 5.0 rating. The actual distribution of the meals in the dataset may not have 5 rating intervals.
+
+**Step 4: Fit Data and Evaluate Performance**  
+The scores of the model on training and testing data are shown below:  
 
 | Data | Score |
 | ---- | ----- |
@@ -126,7 +143,7 @@ The scores of the model on training and testing data are shown as below:
 
 ## Final Model ##  
 
-The final model will predict the ratings based on more valuables and use polynomial features in training.  
+The final model will predict the ratings based on more valuables.  
 
 The steps of setting up this model are shown below:  
 
@@ -141,21 +158,23 @@ These features are added to the selected features:
 6. saturated_fat
 7. carbohydrates
 
+These features will make the model predict the ratings not only based on the time and complexity but also the nutrition.  
+
 **Step 2: Split Training and Testing Data**  
 
-Set 80% of examples as training data, and 20% of examples as testing data, and the random state is set as 23.  
+Set 80% of examples as training data, and 20% of examples as testing data, and the random state is set as 32. Using different   
 
 **Step 3: Set up model**
 
-
+Also use the K-Neighbors model to classify the ratings, and use GridSearchCV to find out the optimal amount of neighbors in the scope [3, 5].
 
 **Step 4: Fit Data and Evaluate Performance**  
 The scores of the model on training and testing data are improved as below:  
 
 | Data | Score |
 | ---- | ----- |
-| Training | 0.7997706830528097 | 
-| Testing | 0.7538293703802654 |
+| Training | 0.799998886810936 | 
+| Testing | 0.7517143111586072 |
 
 There is a small but also valuable improvement after adding several features.
 
